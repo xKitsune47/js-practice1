@@ -14,10 +14,15 @@ function blockEntry(){
 }
 
 function enterButton(){
-    document.getElementById('startText').remove();
+    document.getElementById('entry').remove();
     setTimeout(renderContent, 1000);
 }
 
 function renderContent(){
-    document.querySelector('body').setAttribute('style', 'background-color: white;')
+    const parentElement = document.querySelector('body');
+    parentElement.setAttribute('style', 'background-color: white;');
 }
+
+const siteWidth = 1280;
+let scale = screen.width /siteWidth;
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');

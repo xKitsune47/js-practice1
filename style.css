@@ -8,7 +8,7 @@ body{
     font-family: 'vt323';
 }
 
-button{
+#entry button{
     font-family: 'vt323';
     font-size: 3rem;
     width: 5rem;
@@ -16,11 +16,11 @@ button{
     border: none;
 }
 
-button:active{
+#entry button:active{
     opacity: 0.5;
 }
 
-.entry{
+#entry{
     text-align: center;
     margin: auto;
 }
